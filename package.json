@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio website showcasing skills, projects, and experience.",
+  "main": "src/main.jsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "vite",
+    "3d",
+    "animations"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "three": "^0.140.0",
+    "framer-motion": "^5.0.0",
+    "tailwindcss": "^3.0.0"
+  },
+  "devDependencies": {
+    "vite": "^3.0.0",
+    "postcss": "^8.0.0",
+    "autoprefixer": "^10.0.0"
+  }
+}
