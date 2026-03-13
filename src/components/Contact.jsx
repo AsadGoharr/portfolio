@@ -16,7 +16,7 @@ const RotatingTorus = () => {
   return (
     <Float speed={1.5} rotationIntensity={0.5} floatIntensity={1}>
       <mesh ref={ref}>
-        <torusKnotGeometry args={[1, 0.35, 128, 32]} />
+        <torusKnotGeometry args={[1, 0.35, 64, 16]} />
         <meshStandardMaterial
           color="#e0e0e0"
           wireframe
@@ -222,7 +222,8 @@ const Contact = () => {
           <Suspense fallback={null}>
             <Canvas
               camera={{ position: [0, 0, 4], fov: 55 }}
-              gl={{ alpha: true, antialias: true }}
+              gl={{ alpha: true, antialias: false, powerPreference: "high-performance" }}
+              dpr={[1, 1.5]}
               style={{ background: "transparent" }}
             >
               <ambientLight intensity={0.3} />

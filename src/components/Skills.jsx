@@ -73,7 +73,8 @@ const Skills = () => {
           }>
             <Canvas
               camera={{ position: [0, 0, 8], fov: 55 }}
-              gl={{ alpha: true, antialias: true }}
+              gl={{ alpha: true, antialias: false, powerPreference: "high-performance" }}
+              dpr={[1, 1.5]}
               style={{ background: "transparent" }}
             >
               <SkillCloud skills={allSkills} />
