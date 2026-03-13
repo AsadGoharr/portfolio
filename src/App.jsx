@@ -1,4 +1,4 @@
-                                                                                                                                                                                                          import { useEffect, useState, useCallback, lazy, Suspense } from "react";
+                                                                                                                                                                                                          import { useEffect, useState, lazy, Suspense } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { MeshGradient } from "@paper-design/shaders-react";
 import { Analytics } from "@vercel/analytics/react";
@@ -15,6 +15,7 @@ import "./index.css";
 // Lazy-load the heavy 3D sections
 const Skills = lazy(() => import("./components/Skills"));
 const Contact = lazy(() => import("./components/Contact"));
+const MotionDiv = motion.div;
 
 const SectionFallback = () => (
   <div className="flex items-center justify-center py-32 text-gray-700 text-sm">Loading…</div>
@@ -23,14 +24,9 @@ const SectionFallback = () => (
 function App() {
   const [mousePos, setMousePos] = useState({ x: -500, y: -500 });
   const [scrollProgress, setScrollProgress] = useState(0);
-  const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1024;
   const { scrollYProgress } = useScroll();
   const y1 = useTransform(scrollYProgress, [0, 1], [0, -200]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -350]);
-
-  const handleMouse = useCallback((e) => {
-    setMousePos({ x: e.clientX, y: e.clientY });
-  }, []);
 
   useEffect(() => {
     let rafId;
@@ -75,18 +71,14 @@ function App() {
         className="cursor-glow hidden lg:block"
         style={{ left: mousePos.x, top: mousePos.y }}
       />
-      {isDesktop && (
-        <>
-          <motion.div
-            style={{ y: y1 }}
-            className="fixed top-[20%] right-[15%] w-[500px] h-[500px] bg-violet/[0.04] rounded-full blur-[140px] pointer-events-none"
-          />
-          <motion.div
-            style={{ y: y2 }}
-            className="fixed bottom-[10%] left-[10%] w-[400px] h-[400px] bg-cyan/[0.03] rounded-full blur-[120px] pointer-events-none"
-          />
-        </>
-      )}
+      <MotionDiv
+        style={{ y: y1 }}
+        className="fixed top-[20%] right-[15%] w-[500px] h-[500px] bg-violet/[0.04] rounded-full blur-[140px] pointer-events-none hidden lg:block"
+      />
+      <MotionDiv
+        style={{ y: y2 }}
+        className="fixed bottom-[10%] left-[10%] w-[400px] h-[400px] bg-cyan/[0.03] rounded-full blur-[120px] pointer-events-none hidden lg:block"
+      />
       <Navbar />
       <Hero />
       <About />
