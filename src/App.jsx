@@ -15,7 +15,6 @@ import "./index.css";
 // Lazy-load the heavy 3D sections
 const Skills = lazy(() => import("./components/Skills"));
 const Contact = lazy(() => import("./components/Contact"));
-const MotionDiv = motion.div;
 
 const SectionFallback = () => (
   <div className="flex items-center justify-center py-32 text-gray-700 text-sm">Loading…</div>
@@ -71,11 +70,11 @@ function App() {
         className="cursor-glow hidden lg:block"
         style={{ left: mousePos.x, top: mousePos.y }}
       />
-      <MotionDiv
+      <motion.div
         style={{ y: y1 }}
         className="fixed top-[20%] right-[15%] w-[500px] h-[500px] bg-violet/[0.04] rounded-full blur-[140px] pointer-events-none hidden lg:block"
       />
-      <MotionDiv
+      <motion.div
         style={{ y: y2 }}
         className="fixed bottom-[10%] left-[10%] w-[400px] h-[400px] bg-cyan/[0.03] rounded-full blur-[120px] pointer-events-none hidden lg:block"
       />

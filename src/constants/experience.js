@@ -1,25 +1,97 @@
-const experienceData = [
-    {
-        title: "Software Engineer Intern",
-        company: "Tech Company",
-        location: "City, State",
-        duration: "June 2022 - August 2022",
-        description: "Worked on developing and maintaining web applications using React and Node.js. Collaborated with cross-functional teams to enhance user experience."
-    },
-    {
-        title: "Web Developer",
-        company: "Freelance",
-        location: "Remote",
-        duration: "January 2021 - May 2022",
-        description: "Designed and developed responsive websites for various clients. Utilized HTML, CSS, and JavaScript to create interactive user interfaces."
-    },
-    {
-        title: "Intern",
-        company: "Startup Inc.",
-        location: "City, State",
-        duration: "Summer 2021",
-        description: "Assisted in the development of a mobile application. Gained experience in Agile methodologies and participated in daily stand-ups."
-    }
+export const experiences = [
+  {
+    id: 1,
+    title: "Data & Product Research Analyst Intern",
+    company: "The Canada List",
+    companyInitials: "TCL",
+    companyLogo: "/The Canada List Image.jpg",
+    companyColor: "#c0392b",
+    period: "Mar 2025 – Present",
+    location: "Remote",
+    points: [
+      "Conducted data-driven product research to identify market trends and growth opportunities across Canadian industry verticals.",
+      "Built and maintained analytical dashboards tracking key business metrics and performance indicators.",
+      "Collaborated cross-functionally to deliver actionable insights driving product decisions and roadmap prioritization.",
+      "Performed competitive analysis and compiled structured reports to inform go-to-market strategy.",
+    ],
+  },
+  {
+    id: 2,
+    title: "AI & Data Systems Intern",
+    company: "CAYOP: Canadian Youth Opportunities",
+    companyInitials: "CY",
+    companyLogo: "/CAYOP image.jpg",
+    companyColor: "#2980b9",
+    period: "Dec 2025 – Feb 2026",
+    location: "Remote",
+    tech: "Bubble.io, Python, OpenAI API, JSON",
+    points: [
+      "Built and deployed an AI-powered opportunity-matching chatbot in Bubble.io using OpenAI, connecting real opportunity data to user queries through a retrieval-augmented (RAG) pipeline.",
+      "Designed database-driven ranking and filtering logic (location, deadline, approval status, relevance scores) to deliver accurate, personalized matches.",
+      "Implemented session-based memory, multi-turn conversations, and prompt controls to prevent hallucinations and ensure only valid opportunities are returned.",
+      "Developed automated workflows, API integrations, and system documentation to support scalable deployment and ongoing maintenance.",
+    ],
+  },
+  {
+    id: 3,
+    title: "Project Coordinator",
+    company: "Ontario Tech University – Tech For Good",
+    companyInitials: "OTU",
+    companyLogo: "/uoit_logo.jpg",
+    companyColor: "#003c71",
+    period: "July 2025 – Aug 2025",
+    location: "Oshawa, ON",
+    tech: "Excel, Word, Notion, AI",
+    points: [
+      "Conducted market research using AI-assisted tools to evaluate the integration of virtual reality (VR) in gym and fitness environments, focusing on user engagement, accessibility, and overall value.",
+      "Analyzed how VR-based fitness solutions could enhance workout motivation, user experience, and inclusivity, supporting the feasibility of technology-driven wellness initiatives.",
+      "Conducted testing with individuals and gathered feedback, used research findings to create clear insights and recommendations to steer project direction and shared with stakeholders.",
+      "Collaborated with team members and faculty advisors to ensure research goals, testing methods, and outcomes were aligned.",
+    ],
+  },
 ];
 
-export default experienceData;
+export const volunteer = [
+  {
+    id: 1,
+    title: "Next-Gen Student",
+    company: "TELUS Health Advisory Group",
+    companyInitials: "TH",
+    companyLogo: "/telus.jpg",
+    companyColor: "#4b286d",
+    period: "Sep 2025 – Present",
+    location: "Remote",
+    points: [
+      "Provide ongoing feedback and strategic input on TELUS Health products, including mobile apps, websites, and digital services, to help improve usability, accessibility, and user experience.",
+      "Complete structured surveys and feedback sessions to evaluate TELUS platforms, features, and communications from a student and user perspective.",
+      "Participate in advisory discussions with other students to share insights on how TELUS can better support customers and users across its health and digital services.",
+    ],
+  },
+  {
+    id: 2,
+    title: "Marketing Executive",
+    company: "OTU Cloud Computing Association",
+    companyInitials: "CCA",
+    companyLogo: "/OCCA.jpg",
+    companyColor: "#1a73e8",
+    period: "Sep 2024 – Present",
+    location: "Oshawa, ON",
+    points: [
+      "Collaborated with a team of 6 executives, increasing event attendance by 25% compared to the previous year, by creating, promoting, and organizing 5+ campus and online events.",
+    ],
+  },
+  {
+    id: 3,
+    title: "Management Executive",
+    company: "OTU Hack Station",
+    companyInitials: "HS",
+    companyLogo: "/OTU Hack Station.jpg",
+    companyColor: "#e67e22",
+    period: "Sep 2024 – Present",
+    location: "Oshawa, ON",
+    points: [
+      "Managed and developed strategic plans for the club’s present and future operations, ensuring smooth execution of activities and sustainability of initiatives, by organizing workflows and documentation using Notion and Microsoft Word.",
+      "Overseen and maintained the club’s budget, keeping expenses within limits and improving financial transparency by tracking and analyzing funds in Microsoft Excel.",
+    ],
+  },
+];

@@ -1,38 +1,22 @@
-export const skills = [
-    {
-        name: "JavaScript",
-        level: "Expert",
-    },
-    {
-        name: "React",
-        level: "Advanced",
-    },
-    {
-        name: "CSS",
-        level: "Advanced",
-    },
-    {
-        name: "HTML",
-        level: "Expert",
-    },
-    {
-        name: "Node.js",
-        level: "Intermediate",
-    },
-    {
-        name: "Three.js",
-        level: "Intermediate",
-    },
-    {
-        name: "Git",
-        level: "Advanced",
-    },
-    {
-        name: "Responsive Design",
-        level: "Advanced",
-    },
-    {
-        name: "Animation",
-        level: "Intermediate",
-    },
+export const skillCategories = [
+  {
+    category: "Programming & Web",
+    skills: ["C++", "Python", "Java", "JavaScript", "TypeScript", "HTML", "CSS", "Angular", "Bubble.io"],
+  },
+  {
+    category: "Frameworks & Libraries",
+    skills: ["React", "Node.js", "Express", "Tailwind CSS", "Three.js", "Framer Motion", "Pandas", "NumPy"],
+  },
+  {
+    category: "Data & Analytics",
+    skills: ["SQL", "MS Office", "Google Sheets", "Tableau", "Power BI", "Excel"],
+  },
+  {
+    category: "Cloud & APIs",
+    skills: ["AWS", "Azure", "OpenAI API", "Docker", "Git", "GitHub", "CI/CD", "Linux", "Vercel", "Firebase"],
+  },
+  {
+    category: "Tools & Platforms",
+    skills: ["VS Code", "Figma", "Chrome Extensions API", "REST APIs", "Postman", "Notion"],
+  },
 ];

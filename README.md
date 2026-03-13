@@ -1,96 +1,16 @@
-# Portfolio Website
+# React + Vite
 
-This is a personal portfolio website showcasing my skills, education, work experience, projects, and contact information. The website is built using React and includes interactive features and 3D animations to enhance user experience.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Project Structure
+Currently, two official plugins are available:
 
-The project is organized as follows:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-```
-portfolio
-├── public
-│   ├── index.html          # Main HTML file
-│   └── models              # Directory for 3D models
-├── src
-│   ├── main.jsx            # Entry point for the React application
-│   ├── App.jsx             # Main application component
-│   ├── styles              # Directory for styles
-│   │   ├── global.css      # Global styles
-│   │   └── variables.css    # CSS variables for theming
-│   ├── components          # Directory for React components
-│   │   ├── Navbar.jsx      # Navigation bar component
-│   │   ├── Hero.jsx        # Hero section component
-│   │   ├── About.jsx       # About me section component
-│   │   ├── Education.jsx   # Education section component
-│   │   ├── WorkExperience.jsx # Work experience section component
-│   │   ├── Certifications.jsx # Certifications section component
-│   │   ├── Skills.jsx      # Skills section component
-│   │   ├── Projects.jsx    # Projects section component
-│   │   ├── Contact.jsx     # Contact section component
-│   │   ├── Footer.jsx      # Footer component
-│   │   └── canvas          # Directory for 3D canvas components
-│   │       ├── Scene.jsx   # 3D scene management
-│   │       ├── HeroModel.jsx # 3D model for the hero section
-│   │       ├── ContactGlobe.jsx # 3D globe for contact section
-│   │       └── StarsBackground.jsx # Starry background for the scene
-│   ├── constants           # Directory for constants
-│   │   ├── index.js        # General constants
-│   │   ├── education.js    # Educational data
-│   │   ├── experience.js    # Work experience data
-│   │   ├── certifications.js # Certification data
-│   │   ├── skills.js       # Skills data
-│   │   └── projects.js     # Project data
-│   ├── hoc                 # Higher-order components
-│   │   ├── index.js        # Exports for HOCs
-│   │   └── SectionWrapper.jsx # Wrapper for sections
-│   ├── utils               # Utility functions
-│   │   ├── motion.js       # Animation utilities
-│   │   └── three-helpers.js # 3D model helpers
-├── package.json            # Project metadata and dependencies
-├── vite.config.js          # Vite configuration
-├── tailwind.config.js      # Tailwind CSS configuration
-├── postcss.config.js       # PostCSS configuration
-├── .gitignore              # Git ignore file
-├── .env.example            # Example environment variables
-└── README.md               # Project documentation
-```
+## React Compiler
 
-## Getting Started
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-To get started with the project, follow these steps:
+## Expanding the ESLint configuration
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/portfolio.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd portfolio
-   ```
-
-3. Install the dependencies:
-   ```
-   npm install
-   ```
-
-4. Start the development server:
-   ```
-   npm run dev
-   ```
-
-5. Open your browser and go to `http://localhost:3000` to view the portfolio.
-
-## Features
-
-- Interactive sections with smooth animations.
-- 3D models and animations integrated into the hero and contact sections.
-- Responsive design for optimal viewing on various devices.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-## Acknowledgments
-
-- Inspired by various portfolio designs and web development resources.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

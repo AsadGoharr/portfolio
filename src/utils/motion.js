@@ -1,54 +1,53 @@
-import { motion } from 'framer-motion';
+export const fadeIn = (direction, type, delay, duration) => ({
+  hidden: {
+    x: direction === "left" ? 80 : direction === "right" ? -80 : 0,
+    y: direction === "up" ? 80 : direction === "down" ? -80 : 0,
+    opacity: 0,
+  },
+  show: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transition: { type, delay, duration, ease: "easeOut" },
+  },
+});
 
-export const fadeIn = (direction = 'up', type = 'tween', delay = 0, duration = 0.5) => {
-  return {
-    initial: {
-      y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
-      opacity: 0,
+export const staggerContainer = (staggerChildren, delayChildren) => ({
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: staggerChildren || 0.1,
+      delayChildren: delayChildren || 0,
     },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type,
-        delay,
-        duration,
-      },
-    },
-  };
-};
+  },
+});
 
-export const slideIn = (direction = 'left', type = 'tween', delay = 0, duration = 0.5) => {
-  return {
-    initial: {
-      x: direction === 'left' ? -100 : direction === 'right' ? 100 : 0,
-      opacity: 0,
-    },
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type,
-        delay,
-        duration,
-      },
-    },
-  };
-};
+export const textVariant = (delay) => ({
+  hidden: { y: -50, opacity: 0 },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: { type: "spring", duration: 1.25, delay },
+  },
+});
 
-export const zoomIn = (delay = 0, duration = 0.5) => {
-  return {
-    initial: {
-      scale: 0,
-      opacity: 0,
-    },
-    animate: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        delay,
-        duration,
-      },
-    },
-  };
-};
+export const zoomIn = (delay, duration) => ({
+  hidden: { scale: 0, opacity: 0 },
+  show: {
+    scale: 1,
+    opacity: 1,
+    transition: { type: "tween", delay, duration, ease: "easeOut" },
+  },
+});
+
+export const slideIn = (direction, type, delay, duration) => ({
+  hidden: {
+    x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
+    y: direction === "up" ? "100%" : direction === "down" ? "-100%" : 0,
+  },
+  show: {
+    x: 0,
+    y: 0,
+    transition: { type, delay, duration, ease: "easeOut" },
+  },
+});
