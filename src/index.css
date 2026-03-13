@@ -80,31 +80,22 @@ body {
 
 .skill-cloud-tag {
   color: #9a9a9a;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
-  padding: 4px 10px;
+  padding: 6px 16px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 20px;
   white-space: nowrap;
   user-select: none;
-  transition: all 0.3s;
+  transition: border-color 0.3s, color 0.3s, background 0.3s;
   cursor: default;
-  touch-action: none;
-}
-
-@media (min-width: 640px) {
-  .skill-cloud-tag {
-    font-size: 13px;
-    padding: 6px 14px;
-  }
 }
 
 .skill-cloud-tag:hover {
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.3);
   color: #fff;
-  transform: scale(1.15);
 }
 
 .bento-card {

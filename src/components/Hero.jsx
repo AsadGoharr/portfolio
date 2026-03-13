@@ -48,25 +48,9 @@ const Hero = () => {
       <MeshGradient
         className="w-full h-full absolute inset-0"
         colors={["#000000", "#1a1a1a", "#333333", "#ffffff"]}
-        speed={1.0}
+        speed={0.3}
         backgroundColor="#000000"
       />
-
-      {/* Lighting overlay blobs from demo */}
-      <div className="absolute inset-0 pointer-events-none z-[1]">
-        <div
-          className="absolute top-1/4 left-1/3 w-32 h-32 bg-gray-800/10 rounded-full blur-3xl animate-pulse"
-          style={{ animationDuration: "3s" }}
-        />
-        <div
-          className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-white/5 rounded-full blur-2xl animate-pulse"
-          style={{ animationDuration: "2s", animationDelay: "1s" }}
-        />
-        <div
-          className="absolute top-1/2 right-1/3 w-20 h-20 bg-gray-900/10 rounded-full blur-xl animate-pulse"
-          style={{ animationDuration: "4s", animationDelay: "0.5s" }}
-        />
-      </div>
 
       {/* Bottom gradient fade to site bg */}
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent z-[2]" />

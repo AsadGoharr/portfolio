@@ -70,11 +70,11 @@ function App() {
       <div ref={cursorRef} className="cursor-glow hidden lg:block" />
       <motion.div
         style={{ y: y1 }}
-        className="fixed top-[20%] right-[15%] w-[500px] h-[500px] bg-violet/[0.04] rounded-full blur-[140px] pointer-events-none hidden lg:block"
+        className="fixed top-[20%] right-[15%] w-[400px] h-[400px] bg-violet/[0.03] rounded-full blur-[80px] pointer-events-none hidden lg:block"
       />
       <motion.div
         style={{ y: y2 }}
-        className="fixed bottom-[10%] left-[10%] w-[400px] h-[400px] bg-cyan/[0.03] rounded-full blur-[120px] pointer-events-none hidden lg:block"
+        className="fixed bottom-[10%] left-[10%] w-[300px] h-[300px] bg-cyan/[0.02] rounded-full blur-[60px] pointer-events-none hidden lg:block"
       />
       <Navbar />
       <Hero />
