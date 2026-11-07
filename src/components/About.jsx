@@ -39,14 +39,17 @@ const About = () => {
           <p className="text-cyan text-sm font-medium mb-5">IT Student &bull; Developer &bull; Toronto, Canada</p>
           <p className="text-gray-300 text-base leading-relaxed">
             I&apos;m an Information Technology student at Ontario Tech University specializing in
-            Technology Management. I recently wrapped up an AI internship at{" "}
-            <span className="text-violet font-medium">CAYOP</span> and currently drive data
-            research at <span className="text-violet font-medium">The Canada List</span>.
+            Technology Management. This year I worked as a junior data analyst at{" "}
+            <span className="text-violet font-medium">Pathways Canada</span>, a data and product
+            research intern at <span className="text-violet font-medium">The Canada List</span>,
+            and an AI and data systems intern at{" "}
+            <span className="text-violet font-medium">CAYOP</span>.
           </p>
           <p className="text-gray-400 text-base leading-relaxed mt-4">
-            I&apos;m also building <span className="text-cyan font-medium">Trace</span> &mdash; a SaaS
-            Chrome extension that simulates realistic human typing. I love shipping real
-            products and exploring the intersection of data, cloud, and modern web tech.
+            I&apos;m also building <span className="text-cyan font-medium">Trace</span> &mdash; a
+            Chrome extension that types text you&apos;ve already written into web editors at a speed
+            you choose. I love shipping real products and exploring the intersection of data,
+            cloud, and modern web tech.
           </p>
         </motion.div>
       </div>
